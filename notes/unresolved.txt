@@ -1,0 +1,12 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host.cpp) before the game will start.
+# symbol | needed by
+HighScoresManager::HighestName(int) | g_word_dojo_2.so
+HighScoresManager::HighestScore(int) | g_word_dojo_2.so
+Locale::LanguageManager::GetInstance() | g_word_dojo_2.so
+Locale::LanguageManager::Active() const | g_word_dojo_2.so
+ugetat | g_word_dojo_2.so
+ustrcmp | g_word_dojo_2.so
+ustrlen | g_word_dojo_2.so
+ustrupr | g_word_dojo_2.so
